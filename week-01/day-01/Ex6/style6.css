@@ -1,0 +1,11 @@
+.box {
+  margin: 10px;
+  display: block;
+  font-family: Times New Roman;
+  border-left: 2px solid black;
+  padding-left: 10px;
+  width: 300px;
+}
+h1 {
+  text-indent: 10px;
+}

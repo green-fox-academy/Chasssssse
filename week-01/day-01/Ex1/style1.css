@@ -1,0 +1,12 @@
+div {
+  width: 20%;
+  height: 120px;
+  padding: 20px;
+  margin: 20px;
+  /* display default block*/
+  font: 30px arial, helvetica;
+  /*font-size: 30px;*/
+  color: #005566;
+  background: #0e91a1;
+  border: 5px solid #7dce94;
+}

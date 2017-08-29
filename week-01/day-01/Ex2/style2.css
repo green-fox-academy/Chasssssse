@@ -1,0 +1,28 @@
+.frame {
+  border: 10px solid #4285f4;
+  width: 25%;
+}
+.North {
+  background: #e67676;
+}
+
+.East {
+  background: #f2f062;
+}
+
+.South {
+  background: #a9e6e6;
+}
+
+.West {
+  background: #7692e4;
+}
+
+.box {
+  padding: 50px;
+  text-align: center;
+  display: block;
+  font-family: arial;
+  font-size: 30px;
+  color: white;
+}

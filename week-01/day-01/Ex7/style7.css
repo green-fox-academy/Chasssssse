@@ -1,0 +1,20 @@
+.container #b325,
+.container .asteroid {
+  border-width: 1px;
+  border-style: solid;
+  border-color: green;
+  width: 30%;
+}
+
+p {
+  width: 30%;
+  background: yellow;
+}
+
+.big {
+  color: blue;
+}
+
+div {
+  font-weight: bold;
+}

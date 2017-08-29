@@ -1,0 +1,29 @@
+div>div:nth-child(3n+1) {
+    background: #666;
+}
+
+div>div:nth-child(3n+2) {
+    background: #999;
+}
+
+div>div:nth-child(3n) {
+    background: #CCCCCC;
+}
+
+div>div {
+    height: 50px;
+    width: 20%;
+    margin: auto;
+}
+
+/*div div[data-count='10'], div div[data-count='11'] {
+    background-color: #666;
+}
+
+div div[data-count='5'], div div[data-count='17'] {
+    background-color: #999;
+}
+
+div div[data-count='13'] {
+    background-color: #CCCCCC;
+}*/

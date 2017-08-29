@@ -1,0 +1,16 @@
+.a{
+    margin: 0px 0px 10px 0px; 
+}
+
+.b{
+    margin: 10px 0px 0px 0px;
+}
+
+.agreement {
+    margin-top: 10px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,16 @@
+div div[data-count='10'] {
+    background-color: #666;
+}
+
+div div[data-count='5'], div div[data-count='13'], 
+div div[data-count='11'], div div[data-count='17'] {
+    background-color: #666;
+    margin-top: 10px;
+}
+
+
+div div {
+    height: 50px;
+    width: 20%;
+    margin: auto;
+}

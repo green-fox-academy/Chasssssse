@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(45deg,#BA4F22 20%, #E04E07 100%);
+
+}
+
+.container {
+    background: rgba(207, 109, 61, 0.8);
+    border-radius: 20px;
+    margin: auto;
+    width: 80%;
+    height: 200px;
+    box-shadow: 3px 3px 1px 1px black;
+}
+
+button {
+    display: inline-block;
+    width: 35%;
+    height: 50%;    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    font: 26px Arial, Helvetica, sans-serif;
+    text-shadow: 2px 1px #EBEBEB;
+}
+
+.b1 {
+    background: linear-gradient(45deg, #4A4A90, #6161BE);
+}
+
+.b2 {
+    background: linear-gradient(45deg, #A7A40F, #E4E014);
+}

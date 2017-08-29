@@ -1,0 +1,25 @@
+.container{
+    padding: 100px;
+}
+
+.item{
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.purple{
+    background-color: purple;
+}
