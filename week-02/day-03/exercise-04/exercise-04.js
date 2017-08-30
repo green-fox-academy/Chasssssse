@@ -19,9 +19,12 @@ var number = 15;
 // 9 * 15 = 135
 // 10 * 15 = 150
 
-var b = [1,2,3,4];
-var a = [5,6,7];
+function mul_table(n)
+{
+    for (var i=1; i<11; i++)
+    {
+        console.log(i + ' * ' + n + ' = ' + n * i);
+    }
+}
 
-b.concat(a);
-delete b[12];
-console.log(b);
+mul_table(number);
