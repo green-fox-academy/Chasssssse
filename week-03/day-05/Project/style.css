@@ -1,0 +1,98 @@
+header {
+    height: 16px;
+    width: 100%;
+    border-bottom: 2px solid blue;
+}
+
+header #h1, #h2 {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    float: left;
+}
+
+header #h1:hover {
+    cursor: pointer;
+}
+
+header #h2 {
+    float: right;
+}
+
+main {
+    height: 1000px;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 50px;
+    margin: 6px 0 20px 0;
+}
+
+.index {
+    width: 15px;
+    height: 100%;
+    padding-top: 14px;
+    font-size: 18px;
+    text-align: center;
+    float: left;
+    color: #808080;
+}
+
+.vote {
+    width: 40px;
+    height: 100%;
+    float: left;
+}
+
+.up, .down {
+    width: 100%;
+    height: 30%;
+    float: left;
+    background: url('images/upvote.png') no-repeat center;
+}
+
+.up:hover, .down:hover, #modify:hover, #remove:hover {
+    cursor: pointer;
+}
+
+.down {
+    background: url('images/downvote.png') no-repeat center;
+}
+
+.title {
+    height: 40%;
+    width: calc(100% - 55px);
+    margin: 0;
+    float: left;
+    color: blue;
+}
+
+.time, .modification {
+    height: 30%;
+    width: calc(100% - 55px);
+    margin: 0;
+    font-size: 12px;
+    float: left;
+    color: #808080;
+}
+
+.modification {
+    font-weight: bold;
+    color: #C8C8C8;
+}
+
+.score {
+    width: 100%;
+    height: 40%;
+    float: left;
+    text-align: center;
+    padding-top: 0px;
+    color: #808080;
+}
+
+#backtoMain {
+    cursor: pointer;
+}
