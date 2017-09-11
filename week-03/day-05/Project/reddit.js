@@ -2,6 +2,7 @@
 
 window.onload = function() {
     main_page();
+    console.log(document.getElementById('h1').textContent);
 }
 
 function main_page() {
