@@ -1,0 +1,29 @@
+.wrapper {
+    width: 200px;
+    height: 1000px;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.green, .purple{
+    /*width: 100%;*/
+    flex-grow: 1;
+}
+
+.green {
+    background: green;
+    order: 0;
+}
+
+.yellow {
+    /*width: 100%;*/
+    flex-grow: 2;
+    background: yellow;
+    order: 2;
+}
+
+.purple {
+    background:  purple;
+    order: 1;
+}

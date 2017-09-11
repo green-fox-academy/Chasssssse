@@ -1,0 +1,45 @@
+body{
+    width: 100%;
+    height:600px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.container {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p {
+    font-size: 20px;
+    transform: rotate(-45deg);
+}
+
+.spin {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 2px solid salmon;
+    transition: 0.5s;
+    z-index: 1;
+    background-color: transparent;
+}
+
+/*.spin:hover {
+    cursor: pointer;
+    transform: rotate(45deg);
+}*/
+
+/*.spin p:hover {
+    cursor: pointer;
+    color: salmon;
+    transform: rotate(-45deg);  
+}*/

@@ -1,0 +1,15 @@
+.wrapper {
+    background: yellow;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.centre {
+    width: 100px;
+    height: 100px;
+    background: purple;
+}

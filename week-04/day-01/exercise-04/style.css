@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+header {
+    background: purple;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav {
+    background: cyan;
+    height: 40px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.wrapper {
+    background: black;
+    flex-grow: 6;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main {
+    background: yellow;
+    flex-grow: 2;
+}
+
+aside {
+    background: green;
+    flex-grow: 1;
+}

@@ -1,0 +1,24 @@
+.wrapper {
+    width: 100%;
+    height: 100px;
+    margin: auto 0;
+    display: flex;
+}
+
+.green, .purple{
+    flex-grow: 1;
+    height: 100px;
+}
+
+.green {
+    background: green;
+}
+
+.yellow {
+    flex-grow: 2;
+    background: yellow;
+}
+
+.purple {
+    background:  purple;
+}
