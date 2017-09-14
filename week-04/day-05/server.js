@@ -116,7 +116,7 @@ app.put('/posts/:id', function(req, res) {
     MongoClient.connect(url, function (err, db) {
         var collection = db.collection('reddit');
         collection.update({'id':_id}, {$set: {'title': req.body.title}});
-        collection.update({'id':_id}, {$set: {'href': req.body.url}}, function(err, obj) {
+        collection.update({'id':_id}, {$set: {'href': req.body.href}}, function(err, obj) {
             if (err) {}
             else {
                 db.close();
@@ -129,7 +129,7 @@ app.put('/posts/:id', function(req, res) {
 });
 
 
-app.listen(2000, function() {
+app.listen(3000, function() {
     console.log('Sever established');
 });
 

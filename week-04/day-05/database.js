@@ -21,11 +21,11 @@ MongoClient.connect(url, function (err, db) {
     },
     {
       "id": 27,
-      "title": "How does it feel being a software develop?",
+      "title": "What the hell is software develop?",
       "href": "https://en.wikipedia.org/wiki/Software_developer",
       "timestamp": 1505399272955,
       "score": 567,
-      "owner": "kristof4",
+      "owner": null,
       "vote": -1
     },
     {
@@ -39,13 +39,22 @@ MongoClient.connect(url, function (err, db) {
     },
     {
       "id": 30,
-      "title": "Big foodie",
-      "href": "https://www.bigfoodie.co.uk/",
-      "timestamp": 1505399272955,
+      "title": "Big foodie into take aways",
+      "href": "http://waimai.meituan.com/",
+      "timestamp": 1505404999126,
       "score": 764,
       "owner": "Chase",
       "vote": 0
-    }      
+    },
+    {
+      "id": 31,
+      "title": "JCrew Denim",
+      "href": "https://www.jcrew.com/cn/mens_category/Denim.jsp?sidecar=true",
+      "timestamp": 1505404999126,
+      "score": 1252,
+      "owner": "Chase",
+      "vote": 0
+    },         
     ]
 
   var collection = db.collection('reddit');

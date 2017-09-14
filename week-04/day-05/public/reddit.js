@@ -7,7 +7,7 @@ window.onload = function() {
 function MainPage() {
     document.querySelector('main').innerHTML = '';
     var http = new XMLHttpRequest();
-    http.open("GET", 'http://localhost:2000/posts');
+    http.open("GET", 'http://localhost:3000/posts');
     http.send(null);   
 
     var Posts;
@@ -220,7 +220,7 @@ function SendPost() {
     var information = {'title': _title, 'href': _url}; 
     if (_title != ''){
         var http = new XMLHttpRequest();
-        http.open("POST", 'http://localhost:2000/posts');
+        http.open("POST", 'http://localhost:3000/posts');
         http.setRequestHeader('Accept', 'application/json');
         http.setRequestHeader("Content-Type", "application/json");
         http.onreadystatechange = function() {
@@ -243,7 +243,7 @@ function UpVote(up, i, _id) {
         var score = document.querySelector('.score.a' + i.toString()).textContent;
         document.querySelector('.score.a' + i.toString()).style.color = 'orange';
         var http = new XMLHttpRequest();
-        http.open("PUT", 'http://localhost:2000/posts/' + _id + '/upvote'); 
+        http.open("PUT", 'http://localhost:3000/posts/' + _id + '/upvote'); 
         http.setRequestHeader('Accept', 'application/json');
         http.send(JSON.stringify(_id.toString()));
         http.onreadystatechange = function() {
@@ -261,7 +261,7 @@ function DownVote(down, i, _id) {
         var score = document.querySelector('.score.a' + i.toString()).textContent;
         document.querySelector('.score.a' + i.toString()).style.color = 'blue';
         var http = new XMLHttpRequest();
-        http.open("PUT", 'http://localhost:2000/posts/' + _id + '/downvote'); 
+        http.open("PUT", 'http://localhost:3000/posts/' + _id + '/downvote'); 
         http.setRequestHeader('Accept', 'application/json');
         http.send();
         http.onreadystatechange = function() {
@@ -276,7 +276,7 @@ function DownVote(down, i, _id) {
 function DeletePost(remove, _id) {
     remove.addEventListener('click', function() {
         var http = new XMLHttpRequest();
-        http.open("DELETE", 'http://localhost:2000/posts/' + _id); 
+        http.open("DELETE", 'http://localhost:3000/posts/' + _id); 
         http.setRequestHeader('Accept', 'application/json');
         http.send();
         http.onreadystatechange = function() {
@@ -291,7 +291,7 @@ function DeletePost(remove, _id) {
 
 function ModifyPost(_id) {
     var http = new XMLHttpRequest();
-    http.open("GET", 'http://localhost:2000/posts');
+    http.open("GET", 'http://localhost:3000/posts');
     http.send(null);   
 
     var Posts;
@@ -391,7 +391,7 @@ function ModifyPost(_id) {
                             var _title = document.getElementById('_title').value;
                             var information = {'title': _title, 'href': _url}; 
                             
-                            http.open("PUT", 'http://localhost:2000/posts/' + _id); 
+                            http.open("PUT", 'http://localhost:3000/posts/' + _id); 
                             http.setRequestHeader('Accept', 'application/json');
                             http.setRequestHeader('Content-Type', 'application/json');
                             http.send(JSON.stringify(information));  
@@ -417,16 +417,20 @@ function CalculateTimeInterval(date) {
     days = Math.floor(seconds / 86400);
     hours = Math.floor(seconds / 3600);
     mins = Math.floor(seconds / 60);
+    console.log(hours);
     if (years > 1) {
         return years + ' '.concat('years');
     }
-    else if (years < 1 && months >1) {
+    else if (years < 1 && months >= 1) {
         return months + ' '.concat('months');
     }
-    else if (months < 1 && days >1) {
+    else if (months < 1 && days >= 1) {
         return days + ' '.concat('days');
     }
-    else if (days < 1 && mins > 1) {
+    else if (days < 1 && hours >= 1) {
+        return hours + ' '.concat('hours');
+    }
+    else if (hours < 1 && mins >= 1) {
         return mins + ' '.concat('minutes');
     }
     else if (mins < 1) {
